@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { Bool } from './types'
+type Bool = boolean | undefined
 
 export const WrapperIcon = styled.div<{ urlBGsvg: string }>`
   background: url(${(props) => props.urlBGsvg}) center no-repeat;

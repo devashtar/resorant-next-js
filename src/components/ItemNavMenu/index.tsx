@@ -5,7 +5,15 @@ import IsFalseWrapperIconImage from '@public/images/svg/state-false.svg'
 
 import * as Styled from './styled'
 
-import { Bool, TypeCallWrapperIcon } from './types'
+type Bool = boolean | undefined
+
+type TypeCallWrapperIcon = {
+  name?: string
+  isBGLogo?: Bool
+  active: Bool
+  onClick?: (event: React.MouseEvent<HTMLElement>) => void
+  IconComponent: React.FC<{}>
+}
 
 export const ItemNavMenu: React.FC<TypeCallWrapperIcon> = ({
   name,

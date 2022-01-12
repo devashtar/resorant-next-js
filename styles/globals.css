@@ -1,9 +1,78 @@
+:root {
+  --primary-color: #EA7C69;
+  --primary-fade-color: #543C3C;
+  --secondary-color: #9288E0;
+  --white: #FFFFFF;
+
+  --text-dark: #3B5162;
+  --text-gray: #889898;
+  --text-light: #ABBBC2;
+  --text-lighter: #E0E6E9;
+  
+
+  --base-bg: #FAFAFA;
+  --base-input-bg: #2D303E;
+  --base-dark-line: #393C49;
+  --base-dark-bg1: #252836;
+  --base-dark-bg2: #1F1D2B;
+  --base-form-bg: #212225;
+
+  --accent-green: #50D1AA;
+  --accent-red: #FF7CA3;
+  --accent-orange: #FFB572;
+  --accent-blue: #65B0F6;
+  --accent-purple: #9290FE;
+
+  --small-text: 14px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border: none;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+::-webkit-scrollbar-thumb:active {
+  background: var(--primary-color);
+}
+::-webkit-scrollbar-track {
+  background: var(--base-dark-line);
+  border: none;
+}
+::-webkit-scrollbar-track:hover {
+  background: var(--base-dark-line);
+}
+::-webkit-scrollbar-track:active {
+  background: var(--base-dark-line);
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,li {
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  
+  font-family: 'Barlow', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #fff;
 }
 
 a {
@@ -11,6 +80,8 @@ a {
   text-decoration: none;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
